@@ -9,26 +9,22 @@ license: "MIT"
 
 code_files:
 # View layer
-- {name: View/ViewInput.swift,  path: Code/View/view_input.swift.liquid}
-- {name: View/ViewOutput.swift, path: Code/View/view_output.swift.liquid}
-- {name: View/ViewController.swift, path: Code/View/viewcontroller.swift.liquid}
+- {name: ViewController.swift, path: Code/viewcontroller.swift.liquid}
 
 # Presenter layer
-- {name: Presenter/ModuleInput.swift, path: Code/Presenter/module_input.swift.liquid}
-- {name: Presenter/Presenter.swift, path: Code/Presenter/presenter.swift.liquid}
+- {name: Presenter.swift, path: Code/presenter.swift.liquid}
 
 # Interactor layer
-- {name: Interactor/InteractorInput.swift, path: Code/Interactor/interactor_input.swift.liquid}
-- {name: Interactor/InteractorOutput.swift, path: Code/Interactor/interactor_output.swift.liquid}
-- {name: Interactor/Interactor.swift, path: Code/Interactor/interactor.swift.liquid}
+- {name: Interactor.swift, path: Code/interactor.swift.liquid}
 
 # Router layer
-- {name: Router/RouterInput.swift, path: Code/Router/router_input.swift.liquid}
-- {name: Router/Router.swift, path: Code/Router/router.swift.liquid}
+- {name: Router.swift, path: Code/router.swift.liquid}
 
-# Configurator
-- {name: Configurator/Configurator.swift, path: Code/Configurator/configurator.swift.liquid}
-- {name: Configurator/Initializer.swift, path: Code/Configurator/initializer.swift.liquid}
+# Contracts
+- {name: Contracts.swift, path: Code/contracts.swift.liquid}
+
+# Initializer
+- {name: Initializer.swift, path: Code/initializer.swift.liquid}
 
 # The declarations for test files
 test_files:
