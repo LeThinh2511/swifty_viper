@@ -1,5 +1,5 @@
 //
-//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ prefix }}{{ module_info.file_name }}
 //  {{ module_info.project_name }}
 //
 //  Created by {{ developer.name }} on {{ date }}.
@@ -8,6 +8,22 @@
 
 import Foundation
 
-protocol {{ module_info.name }}InteractorInput {
+// MARK: View
+protocol {{ module_info.name }}ViewInput: class {
+    func setupInitialState()
+}
 
+protocol {{ module_info.name }}ViewOutput {
+    func viewIsReady()
+}
+
+// MARK: Interactor
+protocol {{ module_info.name }}InteractorInput {
+}
+
+protocol {{ module_info.name }}InteractorOutput: class {
+}
+
+// MARK: Router
+protocol {{ module_info.name }}RouterInput {
 }
